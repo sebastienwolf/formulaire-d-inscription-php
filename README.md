@@ -1,0 +1,2 @@
+# formulaire-d-inscription-php
+ceci est un code que j'ai effectué pour m'entrainer à créer une connexion d'une application avec un formulaire d'inscription si on n'a pas de login. j'ai effectué le test avec une base de données qui a une table User, pour injecter les données du formulaire.
