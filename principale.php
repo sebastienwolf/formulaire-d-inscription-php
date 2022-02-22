@@ -18,7 +18,7 @@
                 session_unset();
                 header("location:index.php");
             }
-        } else if ($_SESSION['pseudo'] !== "") {
+        } else if (isset($_SESSION['pseudo'])) {
             $user = $_SESSION['pseudo'];
             // afficher un message
             echo "<br>Bonjour $user, vous êtes connectés";

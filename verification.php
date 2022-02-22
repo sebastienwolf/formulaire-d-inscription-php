@@ -2,7 +2,7 @@
   
 <?php
 session_start();
-$db = new PDO('mysql:host=localhost;dbname=QUIZZ', 'sebastien', 'sebastien')
+$db = new PDO('mysql:host=localhost;dbname=sebquizz', 'sebastien', 'sebastien')
    or die('could not connect to database');
 
 
@@ -19,7 +19,7 @@ if (isset($_POST['pseudo']) && isset($_POST['password'])) {
    // si les chant du formulaire ne sont vide on continue
    if ($username !== "" && $password !== "") {
       // prepare la requete dans une variable pour appeler la donnée (1 seul ligne viendra)
-      $sql = $db->prepare("SELECT * FROM User where pseudo = :username ");
+      $sql = $db->prepare("SELECT * FROM user where pseudo = :username ");
       // execution de la requete
       $sql->execute(["username" => $username]);
       // transformer le retour en tableau
