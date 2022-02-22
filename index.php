@@ -7,6 +7,8 @@
 </head>
 
 <body>
+
+
     <div id="container">
         <button id="conneClick" class="login" data-info="connection">connection</button>
         <button id="insClick" class="login" data-info="inscription">inscription</button>
